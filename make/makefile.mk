@@ -49,13 +49,13 @@ xrun: xopendoc
 doc:
 	$(call begin_message)
 	$(_PRECMD) && sphinx-build -M html     "$(_CONFIG_DIR)/$(APP__NAME)/doc" "$(_OUTPUT_DIR)"
-	# $(_PRECMD) && sphinx-build -M latexpdf "$(_CONFIG_DIR)/$(APP__NAME)/doc" "$(_OUTPUT_DIR)"
+	$(_PRECMD) && sphinx-build -M latexpdf "$(_CONFIG_DIR)/$(APP__NAME)/doc" "$(_OUTPUT_DIR)"
 	$(call end_message)
 
 xopendoc:
 	$(call begin_message)
 	$(shell python "$(_TOOLBOX)" get_open_command_for_cmake) "$(_OUTPUT_DIR)/html/index.html"
-	# $(shell python "$(_TOOLBOX)" get_open_command_for_cmake) "$(_OUTPUT_DIR)/latex/$(LATEX_FILE_NAME).pdf"
+	$(shell python "$(_TOOLBOX)" get_open_command_for_cmake) "$(_OUTPUT_DIR)/latex/$(LATEX_FILE_NAME).pdf"
 	$(call end_message)
 
 cleandoc:
