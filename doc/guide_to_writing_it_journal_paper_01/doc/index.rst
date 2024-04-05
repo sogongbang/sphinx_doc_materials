@@ -13,6 +13,7 @@ IT 논문지 논문 작성 방법 안내
    background
    proposed_methodology
    experiments_and_evaluations
+   discussion
    conclusion
    references
 
