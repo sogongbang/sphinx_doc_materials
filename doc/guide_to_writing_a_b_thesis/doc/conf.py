@@ -28,6 +28,8 @@ extensions = [
     'sphinx.ext.doctest',
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
+    'sphinx_copybutton',
+    'sphinx_tabs.tabs',
     ]
 
 templates_path = ['_templates']
