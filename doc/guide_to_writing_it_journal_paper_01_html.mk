@@ -5,4 +5,4 @@ APP__NAME ?= guide_to_writing_it_journal_paper_01
 LATEX_FILE_NAME ?= aguidetowritinganitjournalpaper
 
 BUILD_HTML ?= 1
-BUILD_LATEXPDF ?= 1
+BUILD_LATEXPDF ?= 0

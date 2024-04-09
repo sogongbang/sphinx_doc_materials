@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 Welcome to Sphinx quickstart's documentation!
-===================================
+=============================================
 
 **Sphinx** quickstart documentation master file.
 

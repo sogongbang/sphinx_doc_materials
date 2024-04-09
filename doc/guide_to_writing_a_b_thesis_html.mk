@@ -5,4 +5,4 @@ APP__NAME ?= guide_to_writing_a_b_thesis
 LATEX_FILE_NAME ?= aguidetowritingabachelorofartsabthesisinengineering
 
 BUILD_HTML ?= 1
-BUILD_LATEXPDF ?= 1
+BUILD_LATEXPDF ?= 0

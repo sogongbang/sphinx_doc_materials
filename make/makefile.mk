@@ -48,14 +48,22 @@ xrun: xopendoc
 
 doc:
 	$(call begin_message)
+ifneq ("$(BUILD_HTML)", "0")
 	$(_PRECMD) && sphinx-build -M html     "$(_CONFIG_DIR)/$(APP__NAME)/doc" "$(_OUTPUT_DIR)"
+endif
+ifneq ("$(BUILD_LATEXPDF)", "0")
 	$(_PRECMD) && sphinx-build -M latexpdf "$(_CONFIG_DIR)/$(APP__NAME)/doc" "$(_OUTPUT_DIR)"
+endif
 	$(call end_message)
 
 xopendoc:
 	$(call begin_message)
+ifneq ("$(BUILD_HTML)", "0")
 	$(shell python "$(_TOOLBOX)" get_open_command_for_cmake) "$(_OUTPUT_DIR)/html/index.html"
+endif
+ifneq ("$(BUILD_LATEXPDF)", "0")
 	$(shell python "$(_TOOLBOX)" get_open_command_for_cmake) "$(_OUTPUT_DIR)/latex/$(LATEX_FILE_NAME).pdf"
+endif
 	$(call end_message)
 
 cleandoc:

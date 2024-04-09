@@ -5,4 +5,4 @@ APP__NAME ?= sphinx_quickstart
 LATEX_FILE_NAME ?= sphinxquickstart
 
 BUILD_HTML ?= 1
-BUILD_LATEXPDF ?= 1
+BUILD_LATEXPDF ?= 0
