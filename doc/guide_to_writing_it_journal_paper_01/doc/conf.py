@@ -9,7 +9,7 @@ import sys
 import os
 
 source_path = os.path.join(pathlib.Path(__file__).parents[1].resolve().as_posix(), "source")
-sys.path.insert(0, source_path)
+sys.path.insert(0, os.path.abspath(source_path))
 
 
 # -- Project information -----------------------------------------------------
@@ -34,7 +34,6 @@ extensions = [
 
 templates_path = ['_templates']
 exclude_patterns = []
-
 
 
 # -- Options for HTML output -------------------------------------------------

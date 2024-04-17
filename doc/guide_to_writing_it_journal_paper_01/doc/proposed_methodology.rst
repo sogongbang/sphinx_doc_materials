@@ -13,7 +13,7 @@ Proposed Methodology
 
 |
 
-.. image:: ./figure/image/ubinos_architecture.png
+.. image:: /_static/image/ubinos_architecture.png
     :width: 800 px
     :align: center
     :alt: Fiture example

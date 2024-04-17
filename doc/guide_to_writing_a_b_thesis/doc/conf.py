@@ -9,7 +9,7 @@ import sys
 import os
 
 source_path = os.path.join(pathlib.Path(__file__).parents[1].resolve().as_posix(), "source")
-sys.path.insert(0, source_path)
+sys.path.insert(0, os.path.abspath(source_path))
 
 
 # -- Project information -----------------------------------------------------
@@ -36,10 +36,21 @@ templates_path = ['_templates']
 exclude_patterns = []
 
 
-
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 # html_theme = 'alabaster'
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
+
+
+# -- Options for LaTeX output -------------------------------------------------
+# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-latex-output
+
+latex_elements = {
+    # kotex config
+    'fontpkg': r'''
+\usepackage{kotex}
+
+''',
+}
