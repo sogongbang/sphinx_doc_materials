@@ -1,21 +1,19 @@
-A Guide to Writing an IT Journal Paper
+정보통신 분야 논문지 논문 작성 방법
 ==================================================================
-
-IT 논문지 논문 작성 방법 안내
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: 목차:
 
    abstraction
    introduction
    related_work
-   background
    proposed_methodology
    experiments_and_evaluations
    discussion
    conclusion
    references
+   miscellaneous
 
 Indices and tables
 ==================

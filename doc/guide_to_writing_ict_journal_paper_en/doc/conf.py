@@ -15,7 +15,7 @@ sys.path.insert(0, os.path.abspath(source_path))
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'A Guide to Writing an IT Journal Paper'
+project = 'A Guide to Writing an ICT Journal Paper'
 copyright = '2024, Sungho Park'
 author = 'Sungho Park'
 release = '0.1'

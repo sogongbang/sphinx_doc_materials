@@ -11,7 +11,7 @@ Install python packages for sphinx
 ----------------------------------
 .. code-block:: sh
 
-    pip install -U sphinx myst-parser sphinx_rtd_theme sphinx-copybutton sphinx-tabs
+    pip install -U sphinx myst-parser sphinx_rtd_theme sphinx-copybutton sphinx-tabs sphinxcontrib-bibtex
 
 
 Install TeXLive
