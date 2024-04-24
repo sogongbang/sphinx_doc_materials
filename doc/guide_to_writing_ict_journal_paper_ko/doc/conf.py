@@ -55,6 +55,12 @@ exclude_patterns = []
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 
+# -- OPtions for reference numbering
+# https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-numfig
+
+numfig = True
+numfig_secnum_depth = (1)
+numfig_format = {'figure': '그림 %s', 'table': '표 %s', 'code-block': ' 코드블록%s'}
 
 # -- Options for LaTeX output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-latex-output
