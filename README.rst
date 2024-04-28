@@ -9,10 +9,21 @@ Install development environment
 
 Install python packages for sphinx
 ----------------------------------
+
+Windows
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 .. code-block:: sh
 
     pip install -U sphinx myst-parser sphinx_rtd_theme sphinx-copybutton sphinx-tabs sphinxcontrib-bibtex
 
+Linux
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. code-block:: sh
+
+    pip install -U sphinx myst-parser sphinx_rtd_theme sphinx-copybutton sphinx-tabs sphinxcontrib-bibtex
+
+    sudo apt install python3-sphinx
 
 Install TeXLive
 ---------------
